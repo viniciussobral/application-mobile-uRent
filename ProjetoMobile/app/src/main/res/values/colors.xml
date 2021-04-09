@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#0752DE</color>
+    <color name="secundary_blue">#2466E2</color>
+    <color name="border_gray">#E6E6F0</color>
+    <color name="button_ok">#04D361</color>
+    <color name="input_background">#FAFAFC</color>
+    <color name="text_gray">#6A6180</color>
+    <color name="text_gray_second">#9c98a6</color>
+    <color name="form_background">#F0F0F7</color>
+    <color name="blue_acqua_button">#60CCE9</color>
+    <color name="blue_ocean_button">#2F80ED</color>
+</resources>

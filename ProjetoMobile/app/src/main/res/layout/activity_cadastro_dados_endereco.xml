@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroDadosEndereco">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_urent_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/iv_logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dados do endereço"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_dados_endereco"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="CEP"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dados_endereco"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="36dp"
+        android:id="@+id/tv_cep"
+        />
+
+    <EditText
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_cep"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/et_cep"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="Número"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dados_endereco"
+        app:layout_constraintLeft_toRightOf="@id/tv_cep"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/tv_numero"
+        />
+
+    <EditText
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_numero"
+        app:layout_constraintLeft_toRightOf="@id/et_cep"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/et_numero"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logradouro"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/et_cep"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="36dp"
+        android:id="@+id/tv_logradouro"
+        />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_logradouro"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:id="@+id/et_logradouro"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="Cidade"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/et_logradouro"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/tv_cidade"
+        />
+
+    <EditText
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_cidade"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/et_cidade"
+        />
+
+    <TextView
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:text="Número"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/et_logradouro"
+        app:layout_constraintLeft_toRightOf="@id/tv_cidade"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/tv_uf"
+        />
+
+    <EditText
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_uf"
+        app:layout_constraintLeft_toRightOf="@id/et_cidade"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/et_uf"
+        />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#004AAD"
+        android:text="Próximo"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/et_uf"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:id="@+id/btn_proximo"
+        android:onClick="cadastroDadosLoginScreen"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

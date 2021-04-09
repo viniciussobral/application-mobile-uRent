@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarVeiculo"
+    android:background="@color/input_background">
+
+    <LinearLayout
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_width="410dp"
+        android:layout_height="220dp"
+        android:id="@+id/ll_header"
+        android:background="@drawable/style_header_azul"
+        tools:ignore="MissingConstraints"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:src="@drawable/img_icone_seta_voltar"
+            android:id="@+id/iv_seta"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"
+            />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv_menu"
+            android:src="@drawable/img_icone_menu_white" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="-350dp"
+            android:text="Cadastre o seu veículo :)"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="-240dp"
+            android:text="Nos fale um pouco sobre o veículo que irá utilizar aqui!"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="355dp"
+        android:layout_height="470dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/style_card_white"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_header">
+    </TableRow>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Veículo"
+        android:textColor="@color/text_gray"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_header"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/title_placa"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintRight_toLeftOf="@id/title_tipo"
+        app:layout_constraintLeft_toRightOf="@id/title_placa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+
+        android:textSize="20sp"
+        android:text="Placa"
+        android:textColor="@color/text_gray_second"
+        />
+
+    <TextView
+        android:id="@+id/title_tipo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/title_placa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+
+        android:textSize="20sp"
+        android:text="Tipo"
+        android:textColor="@color/text_gray_second"
+        />
+
+    <EditText
+        android:id="@+id/et_placa"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:width="350dp"
+        android:background="@drawable/style_input_background_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="32dp"
+
+        app:layout_constraintTop_toBottomOf="@id/title_placa"
+        app:layout_constraintRight_toLeftOf="@id/et_tipo"
+        app:layout_constraintLeft_toRightOf="@id/et_placa"
+        android:textStyle="bold"
+        />
+
+    <ExpandableListView
+        android:id="@+id/et_tipo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:width="350dp"
+        android:background="@drawable/style_input_background_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+
+        app:layout_constraintTop_toBottomOf="@id/title_placa"
+        app:layout_constraintLeft_toRightOf="@id/et_placa"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/title_fotos"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_placa"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:textSize="20sp"
+        android:text="Fotos"
+        android:textColor="@color/text_gray_second"
+        />
+
+    <EditText
+        android:id="@+id/et_fotos"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:width="350dp"
+        android:background="@drawable/style_input_background_white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title_fotos"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/img_atencao"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img_icone_atencao"
+        app:layout_constraintTop_toBottomOf="@id/et_fotos"
+        app:layout_constraintLeft_toRightOf="@id/img_atencao"
+        app:layout_constraintRight_toLeftOf="@id/text_atencao"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/text_atencao"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Importante! Preencha todos os dados"
+        app:layout_constraintTop_toBottomOf="@id/et_fotos"
+        app:layout_constraintLeft_toRightOf="@id/img_atencao"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_gray_second"
+        />
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/et_fotos"
+        app:layout_constraintLeft_toRightOf="@id/text_atencao"
+        android:background="@drawable/style_button_green"
+        android:layout_marginLeft="20dp"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

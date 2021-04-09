@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroDadosContato">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_urent_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/iv_logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dados de Contato"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_dados_contato"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_dados_contato"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="36dp"
+        android:id="@+id/tv_celular"
+        />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/tv_celular"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:id="@+id/et_celular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/et_celular"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="36dp"
+        android:id="@+id/tv_email"
+        />
+
+    <EditText
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:id="@+id/et_email"
+        />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#004AAD"
+        android:text="Próximo"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:id="@+id/btn_proximo"
+        android:onClick="cadastroDadosEndereco"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
