@@ -15,6 +15,7 @@
     <color name="text_gray">#6A6180</color>
     <color name="text_gray_second">#9c98a6</color>
     <color name="form_background">#F0F0F7</color>
+    <color name="form_background_gray">#F6F5F5</color>
     <color name="blue_acqua_button">#60CCE9</color>
     <color name="blue_ocean_button">#2F80ED</color>
 </resources>

@@ -17,5 +17,16 @@ class TelaInicial : AppCompatActivity() {
         startActivity(telaLogin)
     }
 
-    fun criarConta(view: View) {}
+    fun criarConta(view: View) {
+
+
+    }
+
+
+    fun recuperarSenha(view: View) {
+
+        val redefinicaoSenha = Intent(this,RedefinicaoSenha::class.java)
+        startActivity(redefinicaoSenha)
+
+    }
 }

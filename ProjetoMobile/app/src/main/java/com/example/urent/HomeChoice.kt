@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 
 class HomeChoice : AppCompatActivity() {
 
@@ -12,6 +13,13 @@ class HomeChoice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_choice)
+
+        val tvNomeUser: TextView = findViewById(R.id.tv_nome_user)
+
+        val nomeUsuario = intent.getStringExtra("usuarioNome")
+
+        tvNomeUser.text = nomeUsuario
+
     }
 
     fun alugar(view: View) {

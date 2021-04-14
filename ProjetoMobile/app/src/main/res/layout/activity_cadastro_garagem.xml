@@ -195,7 +195,9 @@
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/white"
                 android:text="Próximo"
-                android:textColor="@color/primary_blue"/>
+                android:textColor="@color/primary_blue"
+                android:onClick="cadastrarAnuncio"
+                />
 
         </LinearLayout>
     </ScrollView>
